@@ -1,0 +1,87 @@
+/* Reset default margins & paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full-screen background */
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url("bg-2.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form container styling - Adjusted to look better */
+.container {
+    width: 50vw;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2); /* Lighter transparent box */
+    padding: 30px;
+    border-radius: 10px;
+    color: black; /* Darker text for better contrast */
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    backdrop-filter: blur(10px); /* Glass effect for modern look */
+}
+
+/* Stylish Input Fields */
+input, textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.5); /* Light transparent for better contrast */
+    color: black; /* Darker text for readability */
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Placeholder Styling */
+input::placeholder, textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Readable dark placeholders */
+}
+
+/* Submit Button */
+button {
+    width: 50%;
+    padding: 12px;
+    background: #ff6600;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff4500;
+}
+
+/* Title Animation */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    animation: slideDown 1s ease-in-out;
+    color: black; /* Darker text for better contrast */
+}
+
+/* Keyframes for Sliding Title */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
